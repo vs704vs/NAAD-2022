@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.gallery-container {
+  margin: 0;
+  margin-top: 0;
+  margin-left: 120px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #ffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  /* background-image: ; */
+}
+.header {
+  margin: 0px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  position: relative;
+  align-self: center;
+}
+
+.text {
+  font-size: 7rem;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+body {
+  background: #262626;
+  background-image: url("img/backgrounds/Gallery.png");
+  background-color: #4b4949;
+}
+.mesorny {
+  columns: 3;
+  column-gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  /* padding-top: 200px; */
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+.grid-images {
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+  transition: 1s;
+}
+.grid-images:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+.mesorny:hover .grid-images :not(:hover) {
+  opacity: 0.95;
+}
+
+@media (max-width: 1200px) {
+  .mesorny {
+    columns: 2;
+  }
+  .text {
+    align-self: center;
+  }
+}
+@media (max-width: 998px) {
+  .mesorny {
+    columns: 2;
+  }
+  .text {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 425px) {
+  .gallery-container {
+    columns: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  .text {
+    /* padding-top: 20px; */
+    font-size: 4rem;
+  }
+}

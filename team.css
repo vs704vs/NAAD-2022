@@ -1,0 +1,97 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.team-container {
+  margin: 0;
+}
+
+.naadLogo {
+  margin: 20px 0px;
+  padding: 0 5px;
+}
+
+.container {
+  margin-top: 2%;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.inner:hover img {
+  transform: scale(1.15);
+}
+
+.purple {
+  background-color: rgb(43, 9, 75);
+  background-image: url("img/backgrounds/Team_BG.png");
+}
+
+.golden {
+  background-color: #c7f688;
+}
+
+.icon-cog {
+  color: black;
+}
+
+.heading {
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.text {
+  font-size: 7rem;
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.card-title {
+  /* color: #2b127f; */
+  color: black;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 180%;
+  font-weight: 900;
+}
+
+.card-text {
+  color: black;
+  font-family: "Satisfy", cursive;
+  font-size: 125%;
+  font-weight: 550;
+}
+
+.frame {
+  padding-left: 8%;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .text {
+    font-size: 4rem;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .frame {
+    padding-left: 7%;
+  }
+}
